@@ -1,0 +1,105 @@
+<head>
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<script type="text/javascript">
+	$(document).ready(function(){
+ 
+  $("a").on('click', function(event) {
+    
+    if (this.hash !== "") {
+    
+      event.preventDefault();
+      
+      var hash = this.hash;
+
+            $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+       
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+	</script>
+	
+	<div class="header">
+		<div class="left-part nav-ele">
+		<span><img src="logo.png" height="100px" width="100px"></span>Antariksh</div>
+	
+	</div>
+	
+	<div class="main">
+	
+		<h1>We make <br>things fly to<br> outer space.</h1>
+		<a href="#about">Know More</a>
+	</div>
+	
+	<div class="about" align="right" id="about">
+		<h1>About Us</h1>
+		<p>A revolutionist in its domain, Antariksh literally believes in the phrase &quot;Life after Death&quot;. We design, manufacture and launch high tech spacecrafts into space, mainly different planets. Abiding by our motto &quot;______&quot; we undertake all kinds of explorations, research and executions to find an alternative place to be inhabited by humans.
+ </p>
+		<div class="text-box box1">
+			<h2>Travel</h2>
+			<h5>We provide spaceships for travel to planets and we make lots of people go places.</h5>
+		</div>
+		<div class="text-box box2">
+			<h2>Transport.</h2>
+			<h5>Our hundred of cargo spaceships help get stuff from earth to space. We are the fedex of outer earth.</h5>
+		</div>
+		<div class="text-box box3">
+			<h2>Mining</h2>
+			<h5>There's a huge array of resources out there and we know how to get it.</h5>
+		</div>
+		<div class="text-box box4">
+			<h2>Green</h2>
+			<h5>We understand the importance of environment and thus are eco-friendly in all means possible.</h5>
+		</div>
+	</div>
+	<div class="project" align="center">
+		
+		<p class="product-heading">Our most recent project</p>
+		<a href="index2.html"><div class="cards">
+			<img src="art.png" height="300px" width="300px">
+			<h2>xxxun</h2>
+		</div></a>
+		</div>
+	
+	<div class="team" align="center">
+		<h1>Meet the Team</h1>
+		<div class="row" align="center">
+			<div class="person">
+				<br><br><br><br>
+				<h2>Tanvish Jha</h2>
+				<h3>CEO</h3>
+			</div>
+			<div class="person">
+				<br><br><br><br>
+				<h2>Raghav Puri</h2>
+				<h3>Senior Manager</h3>
+			</div>
+			<div class="person">
+				<br><br><br><br>
+				<h2>Tapish Golcha</h2>
+				<h3>Event Handler</h3>
+			</div>
+			
+		</div>
+	</div>
+	<div class="contact" align="center">
+		<h1>Get in touch with us.</h1>
+		<input type="text" name="name" placeholder="Full Name"><br>
+		<input type="text" name="name" placeholder="Phone Number"><br>
+		<input type="text" name="name" placeholder="Your Message"><br>
+		<button type="submit">Submit</button>
+	</div>
+	<div class="footer" align="center">
+		Made with &hearts; by CORE.
+	</div>
